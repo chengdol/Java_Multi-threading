@@ -23,7 +23,7 @@ public class EventStorage
 		{
 			try
 			{
-				// when wait, will release object monitor
+				// when wait, will release current thread held object monitor 
 				wait();
 			}
 			catch (InterruptedException e)
@@ -44,7 +44,7 @@ public class EventStorage
 		{
 			try
 			{
-				// when wait, will release object monitor
+				// when wait, will release current thread held object monitor
 				wait();
 			}
 			catch (InterruptedException e)
