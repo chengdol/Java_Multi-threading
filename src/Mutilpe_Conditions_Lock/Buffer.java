@@ -12,9 +12,9 @@ public class Buffer
 	private final ReentrantLock lock;
 	
 	// conditions
-	// one lock cannot reach high concurrency?
-	// consumers still read one by one
-	// in class also one mutex
+	// 这里用的reentrant lock，每次只能有一个consumer
+	// 因为这是producer-consumer problem
+	// 这不是reader-writer problem!
 	private final Condition lines;
 	private final Condition spaces;
 	
@@ -71,6 +71,7 @@ public class Buffer
 		{
 			while (buffer.size() == 0 && hasPendingLines())
 			{
+				// await in lines condition queue
 				lines.await();
 			}
 			

@@ -28,6 +28,10 @@ public class PricesInfo
 		// for updated value
 		// for no other thread mutate value when read
 		lock.readLock().lock();
+		
+		// multiple readers can enter this section
+	    // if not locked for writing, and not writers waiting
+	    // to lock for writing.
 		double value = price1;
 		lock.readLock().unlock();
 		
@@ -37,6 +41,9 @@ public class PricesInfo
 	public double getPrice2()
 	{
 		lock.readLock().lock();
+		// multiple readers can enter this section
+	    // if not locked for writing, and not writers waiting
+	    // to lock for writing.
 		double value = price2;
 		lock.readLock().unlock();
 		
@@ -48,6 +55,8 @@ public class PricesInfo
 	public void setPrice(double price1, double price2)
 	{
 		lock.writeLock().lock();
+		// only one writer can enter this section,
+	    // and only if no threads are currently reading.
 		System.out.printf("%s: PricesInfo: Write lock adquired.\n", new Date());
 		
 		// simulate write process

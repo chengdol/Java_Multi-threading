@@ -16,6 +16,7 @@ public class EventStorage
 		storage = new LinkedList<>();
 	}
 	
+	// here use synchronized method, damn slow
 	public synchronized void set()
 	{
 		// guard command

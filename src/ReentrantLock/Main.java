@@ -1,5 +1,16 @@
 package ReentrantLock;
 
+
+
+// why use reentrantlock? difference with synchronized:
+// http://www.geeksforgeeks.org/reentrant-lock-java/
+/*
+ * the synchronized keyword is quite rigid in its use. For example, 
+ * a thread can take a lock only once. Synchronized blocks don’t 
+ * offer any mechanism of a waiting queue and after the exit of one 
+ * thread, any thread can take the lock. This could lead to starvation 
+ * of resources for some other thread for a very long period of time.
+ */
 public class Main
 {
 	public static void main(String[] args)
