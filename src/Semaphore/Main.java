@@ -1,5 +1,8 @@
 package Semaphore;
 
+
+// 这是模拟一个打印系统，一共有3台打印机，但有12个任务
+// 用semaphore去控制打印机的任务分配
 public class Main
 {
 	public static void main(String[] args)

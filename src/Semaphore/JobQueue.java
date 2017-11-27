@@ -15,6 +15,7 @@ public class JobQueue
 	public JobQueue()
 	{
 		// create semaphore with 3 units
+		// at most 3 threads can access shared resource 
 		semaphore = new Semaphore(3);
 		lockPrinter = new ReentrantLock();
 		
@@ -29,6 +30,7 @@ public class JobQueue
 	{
 		try
 		{
+			// acquire semaphore
 			semaphore.acquire();
 			int assignedPrinter = getPrinter();
 			
@@ -46,6 +48,7 @@ public class JobQueue
 		}
 		finally
 		{
+			// release semaphore
 			semaphore.release();
 		}
 	}
@@ -53,7 +56,6 @@ public class JobQueue
 	private int getPrinter()
 	{
 		int ret = -1;
-		
 		try
 		{
 			lockPrinter.lock();
