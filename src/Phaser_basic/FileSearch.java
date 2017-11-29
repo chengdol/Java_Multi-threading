@@ -1,4 +1,4 @@
-package Phaser;
+package Phaser_basic;
 
 import java.io.File;
 import java.util.ArrayList;
