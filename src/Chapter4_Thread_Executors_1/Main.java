@@ -19,7 +19,7 @@ public class Main
 		}
 		
 		// call end server must explicitly
-		// otherwise won'e end application
+		// otherwise won't end application
 		System.out.println("Main: shutting down the executor...");
 		server.endServer();
 		
