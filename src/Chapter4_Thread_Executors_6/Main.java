@@ -6,6 +6,8 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 
+// periodic task dome
+// using scheduleAtFixedRate() method
 public class Main
 {
 	public static void main(String[] args)
