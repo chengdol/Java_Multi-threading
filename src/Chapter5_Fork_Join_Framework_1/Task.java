@@ -44,6 +44,9 @@ public class Task extends RecursiveAction
 			// this is a synchronous call
 			// that means current task waiting for its subtasks completed
 			// at the same time when waiting, look for other tasks to execute
+			
+			// return when task completed!
+			// here we ignore the return value
 			invokeAll(left, right);
 			
 		}
