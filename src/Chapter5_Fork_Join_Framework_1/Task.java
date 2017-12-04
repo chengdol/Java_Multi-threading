@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.concurrent.RecursiveAction;
 
 // we do not need return a result
-// extends the recursiveAction class
+// so extends the recursiveAction class
 public class Task extends RecursiveAction
 {
 	private List<Product> products;
