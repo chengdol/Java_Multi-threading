@@ -1,4 +1,4 @@
-package Chpater5_Fork_Join_Framewrok_3;
+package Chapter5_Fork_Join_Framework_3;
 
 import java.util.List;
 import java.util.concurrent.CountedCompleter;

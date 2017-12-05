@@ -1,4 +1,4 @@
-package Chpater5_Fork_Join_Framewrok_3;
+package Chapter5_Fork_Join_Framework_3;
 
 // search the file with specified extension
 // for each subfolder, create new task in ForkJoinPool
