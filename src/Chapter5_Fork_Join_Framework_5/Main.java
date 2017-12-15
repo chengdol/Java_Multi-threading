@@ -21,7 +21,7 @@ public class Main
 		// pool
 		ForkJoinPool pool = new ForkJoinPool();
 		// task
-		// earch number 5
+		// each number 5
 		SearchNumberTask task = new SearchNumberTask(data, 0, data.length, 5, manager);
 		
 		pool.execute(task);
