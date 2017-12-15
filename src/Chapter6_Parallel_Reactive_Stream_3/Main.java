@@ -7,6 +7,8 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.stream.Collectors;
 
+
+// perform collect operations
 public class Main
 {
 	public static void main(String[] args)
