@@ -32,7 +32,7 @@ public class Main
 				e.printStackTrace();
 			}
 		}
-		// if use arraylist class, cannot get 10_0000 elements!
+		// if use array list class, cannot get 10_0000 elements!
 		System.out.printf("Main: %d elements in deque now\n", deque.size());
 		
 		// remove all elements in list
