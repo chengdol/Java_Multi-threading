@@ -41,6 +41,7 @@ public class Main
 		System.out.printf("Main: queue size is %d\n", pq.size());
 		for (int i = 0; i < threads.length * 1000; i++)
 		{
+			// take() is blocking operation
 			Event e = pq.poll();
 			System.out.printf("Event: thread %d with priority %d\n", e.getThread(), e.getPriority());
 		}
