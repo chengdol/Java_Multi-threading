@@ -4,6 +4,8 @@ package Chapter7_Concurrent_Collections_9_0;
 // practice variable handler
 // the result should be 0 for both variable
 // but unsafe will be incorrect.
+
+// this is new feature of Java9
 public class Main
 {
 	public static void main(String[] args)
