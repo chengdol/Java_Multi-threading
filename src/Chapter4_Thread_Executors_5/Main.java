@@ -11,6 +11,7 @@ public class Main
 {
 	public static void main(String[] args)
 	{
+		// here ScheduledExecutorService is implemented by ScheduledThreadPoolExecutor class
 		ScheduledExecutorService executor = Executors.newScheduledThreadPool(1);
 		
 		System.out.printf("Main: starting at %s\n", new Date());
@@ -18,7 +19,8 @@ public class Main
 		for (int i = 0; i < 5; i++)
 		{
 			Task task = new Task("Task-" + i);
-			// delay to run
+			// schedule to run
+			// here this method will return a ScheduleFuture object
 			executor.schedule(task, i + 1, TimeUnit.SECONDS);
 		}
 		

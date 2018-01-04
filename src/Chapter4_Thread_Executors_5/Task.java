@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.concurrent.Callable;
 
 // simulate a simple task
+// also can be Runnable
 public class Task implements Callable<String>
 {
 	private final String name;

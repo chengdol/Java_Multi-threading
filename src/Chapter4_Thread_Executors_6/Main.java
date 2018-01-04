@@ -12,6 +12,7 @@ public class Main
 {
 	public static void main(String[] args)
 	{
+		// ScheduledExecutorService is implemented by ScheduledThreadPoolExecutor class
 		ScheduledExecutorService executor = Executors.newScheduledThreadPool(1);
 		
 		System.out.printf("Main: starting at %s\n", new Date());
@@ -22,6 +23,7 @@ public class Main
 		// write the time remaining to next execution
 		for (int i = 0; i < 28; i++)
 		{
+			// write the left time to next execution
 			System.out.printf("Main: delay to next execution %s\n",
 					result.getDelay(TimeUnit.MILLISECONDS));
 			
