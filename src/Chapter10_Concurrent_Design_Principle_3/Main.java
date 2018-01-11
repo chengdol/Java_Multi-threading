@@ -6,7 +6,7 @@ import java.util.Date;
 // just in some cases!
 
 // you can define your own atomic type
-// see textbook
+// how? see textbook
 public class Main
 {
 	public static void main(String[] args)
